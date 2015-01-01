@@ -1,0 +1,26 @@
+---
+default:
+    vm:
+        name: mybox
+        box: puppetlabs/centos-6.5-64-puppet
+        box_url: https://vagrantcloud.com/puppetlabs/boxes/centos-6.5-64-puppet/versions/1/providers/virtualbox.box
+        hostname: mybox.local
+        memory: '1024'
+        network:
+            ip: 192.168.10.101
+            forwarded_port:
+                7kMA89eWKwUe:
+                    host: '7722'
+                    guest: '22'
+                epFS2sqgbbln:
+                    host: '8880'
+                    guest: '80'
+                NDWmjaiSo5Re:
+                    host: '3308'
+                    guest: '3306'
+        synced_folder:
+            G0hiS5kbPQT8:
+                source: ../
+                target: /var/www/vhosts
+    ssh:
+        forward_agent: true
