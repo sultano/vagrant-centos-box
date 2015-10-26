@@ -3,7 +3,7 @@ default:
     vm:
         name: mybox
         box: puppetlabs/centos-6.6-64-puppet
-        box_url: https://vagrantcloud.com/puppetlabs/boxes/centos-6.6-64-puppet/versions/1.0.1/providers/virtualbox.box
+        box_url: https://vagrantcloud.com/puppetlabs/boxes/centos-6.6-64-puppet/versions/1.0.2/providers/virtualbox.box
         hostname: mybox.local
         memory: '1024'
         network:
